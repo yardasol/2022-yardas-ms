@@ -1,13 +1,14 @@
 \chapter{Software Overview and Development}%
 \label{cha:software_development}
 
-A major component of this work was restructuring of the SaltProc code and implementation of OpenMC. In this section, I will provide a high level overview of my development process and go into detail where necessary. The release notes contain more details for those interested.
+A major component of this work was restructuring of the SaltProc code and implementation of OpenMC. In this section, I will provide an overview of my development process. I will also explain my implementation choices. The release notes for the versions mentioned in this chapter contain more fine-grained details for those interested.
+
 \section{SaltProc}%
 \label{sec:saltproc}
 
 SaltProc\cite{rykhlevskii_saltproc_2018} is an open source Python package that simulates on-line reprocessing via a batch-wise approach\footnote{Material is moved to or from the core at specific time intervals} in liquid-fueled \Gls{msr}s. More precisely, SaltProc manages material flows and separation processes on nuclides in the fuel. SaltProc relies on external codes to simulate fuel depletion.
 
-The first version of SaltProc (v0.1) was a simple Python 2.7 package that used SERPENT 2 for the fuel depletion simulations. A single Python file contained all functions; separation processes applie dto  used an implicit 100\% efficiency \cite{rykhlevskii_advanced_2018}. The structure of SaltProc v0.1 did not lend itsef easily to development of more sophisticated treatments of reprocessing. This led to the release of Saltproc v0.2, in which the entire codebase was refactored into an object oriented
+The first version of SaltProc (v0.1) was a simple Python 2.7 package that used SERPENT 2 for the fuel depletion simulations. A single Python file contained all functions; separation processes applied to the fuel salt used an implicit 100\% efficiency \cite{rykhlevskii_advanced_2018}. The structure of SaltProc v0.1 did not lend itsef easily to development of more sophisticated treatments of reprocessing. This led to the release of Saltproc v0.2 and v0.32 and v0.3, in which the entire codebase was refactored into an object oriented
 context in Python 3. The addition of new functionality in the \verb.Process. classes enabled more sophisticated treatment of online reprocessing \cite{rykhlevskii_fuel_2020} 
 
 SaltProc v0.3 saw the implementation of processes for gas sparging and separation to more accurately simulate the MSBR, as well as additional refactoring to better follow OOP concepts.
@@ -35,12 +36,25 @@ OpenMC \cite{romano_openmc_2015} is an open source Monte Carlo particle transpor
     \item Support for parallel execution via MPI and OpenMP.
     \item Geometry visualization through the Python API.
 \end{itemize}
-The tool is now quite mature and feature-rich, rivaling its closed-source export controlled counterparts. 
+The tool is now quite mature and feature-rich, and is a vialble alternative to its closed-source export controlled peers. 
 
-
-Recently, depletion and photon transport were added by (who?)... The new depletion feature enables us to couple OpenMC to SaltProc and a fully open-source stack.
+Recently, depletion and photon transport were added by (who?)... The new depletion feature enables us to couple OpenMC to SaltProc and have a fully open-source stack. 
 
 \section{Adding OpenMC to SaltProc}%
 \label{sec:adding_openmc_to_saltproc}
+
+OpenMC support is part of SaltProc v0.5.0, which is one of the main deliverables of this thesis.
+
+In contrast to Serpent which is run as a C executable, OpenMC's \verb.deplete. module is written entirely within Python. This means we cannot run the command for depletion directly from the command line using \verb.mpiexec.. Instead, we must first write a python script that loads in all the necessary inputs for depletion and then runs the depeltion simulation. We then run this script in parallel using \verb.mpiexec. Note that OpenMC will need to be compiled in parallel for this to work on
+cluster-based machines.
+
+I split up implementation of OpenMC support into the following stages:
+\begin{enumerate}
+    \item Handling geometry, materials, and settings inputs; running the depletion simulation
+    \item Creating a new material input file from depletion results
+    \item Storing results and simulation metadata and relevant parameters in a database
+\end{enumerate}
+
+Architectural differences that resulted in novel additions to SaltProc are detailed below.
 
 
