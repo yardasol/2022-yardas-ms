@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="1" name="fuel" volume="48710000.0">
+    <density units="g/cm3" value="3.3332642" />
+    <nuclide ao="0.014357924999999968" name="Li6" />
+    <nuclide ao="0.344142075" name="Li7" />
+    <nuclide ao="0.05333333333333333" name="Be9" />
+    <nuclide ao="0.5635666666666667" name="F19" />
+    <nuclide ao="0.024" name="Th232" />
+    <nuclide ao="0.0006" name="U233" />
+  </material>
+  <material id="2" name="graphite">
+    <density units="g/cm3" value="1.843" />
+    <nuclide name="C0" wo="1.0" />
+    <sab name="c_Graphite" />
+  </material>
+  <material id="3" name="hastelloyN">
+    <density units="g/cm3" value="8.671" />
+    <nuclide name="B10" wo="1.835549587507326e-06" />
+    <nuclide name="B11" wo="8.164450412492673e-06" />
+    <nuclide name="Al27" wo="0.001" />
+    <nuclide name="Si28" wo="0.0009187351728295046" />
+    <nuclide name="Si29" wo="4.831750292845674e-05" />
+    <nuclide name="Si30" wo="3.294732424203873e-05" />
+    <nuclide name="P31" wo="0.00015" />
+    <nuclide name="S32" wo="0.0001421529162123894" />
+    <nuclide name="S33" wo="1.154822906641789e-06" />
+    <nuclide name="S34" wo="6.667728601323577e-06" />
+    <nuclide name="S36" wo="2.453227964521797e-08" />
+    <nuclide name="Ti46" wo="0.0009900119071047102" />
+    <nuclide name="Ti47" wo="0.0009122227902740746" />
+    <nuclide name="Ti48" wo="0.009230631528488601" />
+    <nuclide name="Ti49" wo="0.0006915238166661852" />
+    <nuclide name="Ti50" wo="0.0006756099574664301" />
+    <nuclide name="Cr50" wo="0.002921580575502679" />
+    <nuclide name="Cr52" wo="0.05858955364682328" />
+    <nuclide name="Cr53" wo="0.006771510820966751" />
+    <nuclide name="Cr54" wo="0.001717354956707304" />
+    <nuclide name="Mn55" wo="0.0035" />
+    <nuclide name="Fe54" wo="0.0016936674679200211" />
+    <nuclide name="Fe56" wo="0.027570458631534105" />
+    <nuclide name="Fe57" wo="0.0006481105852150811" />
+    <nuclide name="Fe58" wo="8.776331533079324e-05" />
+    <nuclide name="Co59" wo="0.002" />
+    <nuclide name="Ni58" wo="0.49530756599702" />
+    <nuclide name="Ni60" wo="0.19736294491982" />
+    <nuclide name="Ni61" wo="0.008722421480743293" />
+    <nuclide name="Ni62" wo="0.02826609170871261" />
+    <nuclide name="Ni64" wo="0.007430975893704046" />
+    <nuclide name="Cu63" wo="0.0006847919524171369" />
+    <nuclide name="Cu65" wo="0.0003152080475828631" />
+    <nuclide name="Nb93" wo="0.01" />
+    <nuclide name="Mo92" wo="0.016838269656552784" />
+    <nuclide name="Mo94" wo="0.010789582057261462" />
+    <nuclide name="Mo95" wo="0.018840557267706455" />
+    <nuclide name="Mo96" wo="0.01999840362212584" />
+    <nuclide name="Mo97" wo="0.011613114608838517" />
+    <nuclide name="Mo98" wo="0.029744846826805914" />
+    <nuclide name="Mo100" wo="0.012175225960709028" />
+    <nuclide name="Hf174" wo="1.55925767789418e-05" />
+    <nuclide name="Hf176" wo="0.000518504027100689" />
+    <nuclide name="Hf177" wo="0.0018439333432706492" />
+    <nuclide name="Hf178" wo="0.0027197270772042928" />
+    <nuclide name="Hf179" wo="0.0013655166554622142" />
+    <nuclide name="Hf180" wo="0.0035367263201832133" />
+    <nuclide name="W180" wo="1.1745755317333419e-06" />
+    <nuclide name="W182" wo="0.000262270494770502" />
+    <nuclide name="W183" wo="0.0001424060252874687" />
+    <nuclide name="W184" wo="0.0003065819208728562" />
+    <nuclide name="W186" wo="0.0002875669835374398" />
+    <nuclide name="C0" wo="0.0006" />
+  </material>
+</materials>
