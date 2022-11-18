@@ -1,0 +1,92 @@
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2022 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.13.3-dev
+        Git SHA1 | 309c78dc786beb25fe92b271fdd2bd4c6b3ee153
+       Date/Time | 2022-11-18 13:43:07
+  OpenMP Threads | 12
+
+ Reading settings XML file...
+ Reading cross sections XML file...
+ Reading materials XML file...
+ Reading geometry XML file...
+ Reading Li7 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Li7.h5
+ Reading Be9 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Be9.h5
+ Reading F19 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/F19.h5
+ Reading Th232 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Th232.h5
+ Reading U233 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/U233.h5
+ Reading C0 from /home/ooblack/projects/cross-section-libraries/endfb71_h5/C0.h5
+ Reading Al27 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Al27.h5
+ Reading Ni58 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Ni58.h5
+ Reading Ni60 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Ni60.h5
+ Reading Ni61 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Ni61.h5
+ Reading Ni62 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Ni62.h5
+ Reading Ni64 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Ni64.h5
+ Reading W180 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/W180.h5
+ Reading W182 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/W182.h5
+ Reading W183 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/W183.h5
+ Reading W184 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/W184.h5
+ Reading W186 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/W186.h5
+ Reading Cr50 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Cr50.h5
+ Reading Cr52 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Cr52.h5
+ Reading Cr53 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Cr53.h5
+ Reading Cr54 from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/Cr54.h5
+ Reading c_Graphite from
+ /home/ooblack/projects/cross-section-libraries/endfb71_h5/c_Graphite.h5
+ Minimum neutron data temperature: 600 K
+ Maximum neutron data temperature: 1200 K
+ Preparing distributed cell instances...
+ Reading plot XML file...
+ Writing summary.h5 file...
+
+ =================>     STOCHASTIC VOLUME CALCULATION     <=================
+
+ Running volume calculation 1
+   Material 1: 26085047.397894196 +/- 2617.593128300655 cm^3
+   Material 2: 190333117.34503517 +/- 4328.187110012905 cm^3
+ Elapsed time: 152.114877731 s
+

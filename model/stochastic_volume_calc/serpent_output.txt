@@ -1,0 +1,92 @@
+
+  _                   .-=-.           .-=-.          .-==-.
+ { }      __        .' O o '.       .' O o '.       /  -<' )--<
+ { }    .' O'.     / o .-. O \     / o .-. O \     /  .---`
+ { }   / .-. o\   /O  /   \  o\   /O  /   \  o\   /O /
+  \ `-` /   \ O`-'o  /     \  O`-'o  /     \  O`-`o /
+   `-.-`     '.____.'       `._____.'       `.____.'
+
+Serpent 2 beta
+
+A Continuous-energy Monte Carlo Reactor Physics Burnup Calculation Code
+
+ - Version 2.1.32 (February 24, 2021) -- Contact: serpent@vtt.fi
+
+ - Reference: J. Leppanen, et al. "The Serpent Monte Carlo code: Status,
+              development and applications in 2013." Ann. Nucl. Energy,
+              82 (2015) 142-150.
+
+ - Compiled Oct 12 2022 12:57:16
+
+ - MPI Parallel calculation mode not available
+
+ - OpenMP Parallel calculation mode available
+
+ - Geometry and mesh plotting available
+
+ - Default data path set to: "/home/ooblack/projects/cross-section-libraries/endfb71_ace"
+
+ - Full command used to run Serpent:
+
+   sss2 -omp 12 -checkvolumes 1000000000 msbr_endfb71.serpent
+
+Begin calculation on Fri Nov 18 12:21:38 2022 at beloyarsk
+
+Reading input file "msbr_endfb71.serpent"...
+Reading input file "mats/msbr_saltproc_prepr_comp_endfb71-diluted.ini"...
+Reading input file "geometry/msbr_full.ini"...
+
+ ***** Warning: Serpent 1 input option stabcut on line 81 of file msbr_endfb71.serpent not used
+
+
+Checking duplicate input definitions...
+OK.
+
+Dividing burnable materials...
+OK.
+
+Creating geometry...
+OK.
+
+Counting geometry zones...
+
+The geometry consists of 4 levels:
+
+Level 0 size: max 16 zones
+Level 1 size: max 2025 zones
+Level 2 size: max 12 zones
+Level 3 size: max 11 zones
+
+Processing cells...
+OK.
+
+Linking materials to geometry...
+OK.
+
+Processing detector definitions...
+Allocating RESMAT matrices and associated arrays...
+OK.
+
+Counting cells...
+OK.
+
+Calculating material volumes by sampling points...
+
+x-dimensions : -3.43408E+02 3.43408E+02 cm
+y-dimensions : -3.43408E+02 3.43408E+02 cm
+z-dimensions : -8.12800E+01 5.30860E+02 cm
+
+Estimated calculation time: 0:04:13
+Realized calculation time:  0:04:29
+
+Volumes (in cm3) :
+
+Material fuel  : 4.8710E+07 2.6096E+07 (0.00010) : -0.46425 *
+Material moder : 1.1924E+08 1.9031E+08 (0.00002) :  0.59607 *
+Material hast  : 1.0354E+07 1.0375E+07 (0.00017) :  0.00204 *
+
+Volumes written in file "msbr_endfb71.serpent.mvol"
+
+OK.
+
+

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+  <run_mode>volume</run_mode>
+  <particles>10000</particles>
+  <batches>150</batches>
+  <inactive>25</inactive>
+  <temperature_default>900</temperature_default>
+  <temperature_method>interpolation</temperature_method>
+  <temperature_range>800 1000</temperature_range>
+  <volume_calc>
+    <domain_type>material</domain_type>
+    <domain_ids>1 2</domain_ids>
+    <samples>1000000000</samples>
+    <lower_left>-343.408 -343.408 -81.28</lower_left>
+    <upper_right>343.408 343.408 530.86</upper_right>
+  </volume_calc>
+</settings>
